@@ -6,7 +6,7 @@ This is a pet adoption app built with Flutter that allows users to browse and ad
 
 - Pagination listing: The app fetches and displays a list of pets in a paginated manner, allowing users to browse through multiple pages of available pets.
 
-- Search: Users can search for pets based on different criteria such as breed, age, gender, etc. The app provides a search bar where users can enter their search query and receive filtered results.
+- Search: Users can search for pets based on different criteria such as name age, gender, etc. The app provides a search bar where users can enter their search query and receive filtered results.
 
 - History of adoption: The app keeps track of pets that users have adopted in the past. It provides a history section where users can view the details of previously adopted pets.
 
