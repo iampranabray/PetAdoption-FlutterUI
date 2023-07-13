@@ -69,7 +69,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                     ),
                     IconButton(
                         onPressed: () {
-                          context.go('/searchui');
+                          context.go('/baseRoute/searchui');
                         },
                         icon: const Icon(Icons.search))
                   ],
@@ -144,7 +144,8 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                           itemBuilder: (context, index) {
                             int imageIndex = index % 10;
                             return GestureDetector(
-                              onTap: () => context.go('/detailspage/${index}',
+                              onTap: () => context.go(
+                                  '/baseRoute/detailspage/${index}/${imageIndex}',
                                   extra: state.petData[index]),
                               child: Hero(
                                 tag: "dash$index",

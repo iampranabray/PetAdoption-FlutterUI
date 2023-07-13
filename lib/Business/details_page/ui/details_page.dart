@@ -11,8 +11,10 @@ import 'package:pet_adoption/Business/home_page/model/pet_model.dart';
 import 'package:pet_adoption/Utils/widgets/photo_viewer.dart';
 
 class DetailsPage extends StatelessWidget {
-  DetailsPage({super.key, required this.index, this.petData});
+  DetailsPage(
+      {super.key, required this.index, this.petData, required this.imageIndex});
   final String index;
+  final String imageIndex;
   final PetDataModel? petData;
 
   final double defaultChildSize = 0.6;
@@ -35,11 +37,6 @@ class DetailsPage extends StatelessWidget {
                 BlocProvider.of<HomePageBloc>(context)
                     .add(AdoptPet(id: petData?.id.toString()));
 
-                // var isar = getIt.get<Isar>();
-                // await isar.writeTxn(() async {
-                //   await isar.clear();
-                //   await isar.petDataModels.is;
-                // });
                 showModal<void>(
                   context: context,
                   builder: (BuildContext context) {
@@ -67,7 +64,7 @@ class DetailsPage extends StatelessWidget {
                               context: context,
                               builder: (context) {
                                 return PhotoViewer(
-                                  url: "assets/images/${index}.jpg",
+                                  url: "assets/images/$imageIndex.jpg",
                                   isParentRotation: false,
                                   // dialogContex: context,
                                 );
@@ -79,7 +76,8 @@ class DetailsPage extends StatelessWidget {
                             decoration: BoxDecoration(
                               image: DecorationImage(
                                 fit: BoxFit.cover,
-                                image: AssetImage('assets/images/${index}.jpg'),
+                                image:
+                                    AssetImage('assets/images/$imageIndex.jpg'),
                               ),
                               borderRadius:
                                   const BorderRadius.all(Radius.circular(8.0)),
@@ -93,8 +91,7 @@ class DetailsPage extends StatelessWidget {
                             color: theme.colorScheme.surface,
                             icon: const Icon(Icons.close),
                             onPressed: () {
-                              //context.pop();
-                              context.go('/baseRoute');
+                              context.pop(true);
                             },
                           ),
                         )
@@ -124,39 +121,42 @@ class DetailsPage extends StatelessWidget {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        "${petData?.name}",
-                                        style: theme.textTheme.headlineMedium
-                                            ?.copyWith(
-                                                fontWeight: FontWeight.bold,
-                                                color: theme
-                                                    .colorScheme.onBackground
-                                                    .withAlpha(200)),
-                                      ),
-                                      Row(
-                                        children: [
-                                          Icon(
-                                            MdiIcons.googleMaps,
-                                            color: theme.colorScheme.primary
-                                                .withAlpha(150),
-                                          ),
-                                          Text(
-                                              "${petData?.address.split(",").elementAt(1)},${petData?.address.split(",").elementAt(2)}",
-                                              //Benguluru, India (4km)
-                                              style: theme.textTheme.titleSmall
-                                                  ?.copyWith(
-                                                      color: theme.colorScheme
-                                                          .onBackground
-                                                          .withAlpha(200),
-                                                      fontWeight:
-                                                          FontWeight.bold)),
-                                        ],
-                                      )
-                                    ],
+                                  Expanded(
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "${petData?.name}",
+                                          style: theme.textTheme.headlineMedium
+                                              ?.copyWith(
+                                                  fontWeight: FontWeight.bold,
+                                                  color: theme
+                                                      .colorScheme.onBackground
+                                                      .withAlpha(200)),
+                                        ),
+                                        Row(
+                                          children: [
+                                            Icon(
+                                              MdiIcons.googleMaps,
+                                              color: theme.colorScheme.primary
+                                                  .withAlpha(150),
+                                            ),
+                                            Text(
+                                                "${petData?.address.split(",").elementAt(1)},${petData?.address.split(",").elementAt(2)}",
+                                                //Benguluru, India (4km)
+                                                style: theme
+                                                    .textTheme.titleSmall
+                                                    ?.copyWith(
+                                                        color: theme.colorScheme
+                                                            .onBackground
+                                                            .withAlpha(200),
+                                                        fontWeight:
+                                                            FontWeight.bold)),
+                                          ],
+                                        )
+                                      ],
+                                    ),
                                   ),
                                   IconButton(
                                       onPressed: () {},
