@@ -1,4 +1,4 @@
-# pet_adoption
+# Pet Adoption
 
 This is a pet adoption app built with Flutter that allows users to browse and adopt pets. It includes pagination listing, search functionality, and a history of adoption feature.
 
