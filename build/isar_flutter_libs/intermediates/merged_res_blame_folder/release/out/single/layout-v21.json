@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "dev.isar.isar_flutter_libs-merged_res-11:/layout-v21/notification_template_icon_group.xml",
+        "source": "dev.isar.isar_flutter_libs-core-1.6.0-2:/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "dev.isar.isar_flutter_libs-merged_res-11:/layout-v21/notification_action_tombstone.xml",
+        "source": "dev.isar.isar_flutter_libs-core-1.6.0-2:/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "dev.isar.isar_flutter_libs-merged_res-11:/layout-v21/notification_action.xml",
+        "source": "dev.isar.isar_flutter_libs-core-1.6.0-2:/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "dev.isar.isar_flutter_libs-merged_res-11:/layout-v21/notification_template_custom_big.xml",
+        "source": "dev.isar.isar_flutter_libs-core-1.6.0-2:/layout-v21/notification_template_custom_big.xml"
+    }
+]

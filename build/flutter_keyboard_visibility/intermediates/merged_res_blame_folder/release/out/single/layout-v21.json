@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.jrai.flutter_keyboard_visibility-merged_res-10:/layout-v21/notification_action_tombstone.xml",
+        "source": "com.jrai.flutter_keyboard_visibility-core-1.6.0-2:/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "com.jrai.flutter_keyboard_visibility-merged_res-10:/layout-v21/notification_template_icon_group.xml",
+        "source": "com.jrai.flutter_keyboard_visibility-core-1.6.0-2:/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "com.jrai.flutter_keyboard_visibility-merged_res-10:/layout-v21/notification_action.xml",
+        "source": "com.jrai.flutter_keyboard_visibility-core-1.6.0-2:/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "com.jrai.flutter_keyboard_visibility-merged_res-10:/layout-v21/notification_template_custom_big.xml",
+        "source": "com.jrai.flutter_keyboard_visibility-core-1.6.0-2:/layout-v21/notification_template_custom_big.xml"
+    }
+]

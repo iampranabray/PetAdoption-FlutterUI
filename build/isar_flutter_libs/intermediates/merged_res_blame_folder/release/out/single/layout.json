@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "dev.isar.isar_flutter_libs-merged_res-11:/layout/notification_action_tombstone.xml",
+        "source": "dev.isar.isar_flutter_libs-core-1.6.0-2:/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "dev.isar.isar_flutter_libs-merged_res-11:/layout/notification_template_part_chronometer.xml",
+        "source": "dev.isar.isar_flutter_libs-core-1.6.0-2:/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "dev.isar.isar_flutter_libs-merged_res-11:/layout/custom_dialog.xml",
+        "source": "dev.isar.isar_flutter_libs-core-1.6.0-2:/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "dev.isar.isar_flutter_libs-merged_res-11:/layout/notification_action.xml",
+        "source": "dev.isar.isar_flutter_libs-core-1.6.0-2:/layout/notification_action.xml"
+    },
+    {
+        "merged": "dev.isar.isar_flutter_libs-merged_res-11:/layout/notification_template_icon_group.xml",
+        "source": "dev.isar.isar_flutter_libs-core-1.6.0-2:/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "dev.isar.isar_flutter_libs-merged_res-11:/layout/notification_template_part_time.xml",
+        "source": "dev.isar.isar_flutter_libs-core-1.6.0-2:/layout/notification_template_part_time.xml"
+    }
+]

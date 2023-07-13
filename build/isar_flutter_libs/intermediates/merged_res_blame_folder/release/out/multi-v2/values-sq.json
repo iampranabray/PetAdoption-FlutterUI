@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "dev.isar.isar_flutter_libs-merged_res-11:/values-sq/values-sq.xml",
+            "map": [
+                {
+                    "source": "/Users/amsit/.gradle/caches/transforms-3/7e9df2ac2213a6bd3cef0f2f27870d79/transformed/core-1.6.0/res/values-sq/values-sq.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "dev.isar.isar_flutter_libs-mergeReleaseResources-9:/values-sq/values-sq.xml",
+            "map": [
+                {
+                    "source": "/Users/amsit/.gradle/caches/transforms-3/7e9df2ac2213a6bd3cef0f2f27870d79/transformed/core-1.6.0/res/values-sq/values-sq.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

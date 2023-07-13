@@ -1,0 +1,12 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="dev.isar.isar_flutter_libs" >
+5
+6    <uses-sdk
+7        android:minSdkVersion="16"
+7-->/Users/amsit/.pub-cache/hosted/pub.dev/isar_flutter_libs-3.1.0+1/android/src/main/AndroidManifest.xml
+8        android:targetSdkVersion="16" />
+8-->/Users/amsit/.pub-cache/hosted/pub.dev/isar_flutter_libs-3.1.0+1/android/src/main/AndroidManifest.xml
+9
+10</manifest>

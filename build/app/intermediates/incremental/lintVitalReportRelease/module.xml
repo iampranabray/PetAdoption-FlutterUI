@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="/Users/amsit/Downloads/pet_adoption 3/android/app"
+    name=":app"
+    type="APP"
+    maven="android:app:"
+    gradle="7.3.0"
+    buildFolder="/Users/amsit/Downloads/pet_adoption 3/build/app"
+    bootClassPath="/Users/amsit/Library/Android/sdk/platforms/android-33/android.jar:/Users/amsit/Library/Android/sdk/build-tools/30.0.3/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-33">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>
