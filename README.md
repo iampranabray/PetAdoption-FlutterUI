@@ -11,9 +11,7 @@ This is a pet adoption app built with Flutter that allows users to browse and ad
 - History of adoption: The app keeps track of pets that users have adopted in the past. It provides a history section where users can view the details of previously adopted pets.
 
 ## Screenshots
-<img src="/assets/IMG_2778.jpg" width="400"/>      <img src="/assets/IMG_2779.jpg" width="400"/>
-<img src="/assets/IMG_2780.jpg" width="400"/>      <img src="/assets/IMG_2781.jpg" width="400"/>
-
+<img src="/assets/screenshot.png"/> 
 
 ## Getting Started
 
