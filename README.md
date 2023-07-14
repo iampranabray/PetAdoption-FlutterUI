@@ -34,7 +34,7 @@ This project relies on the following famous dependencies:
 - [flutter_bloc](https://pub.dev/packages/flutter_bloc): State management library that provides a predictable way to manage app state.
 - [isar](https://pub.dev/packages/isar): Super Fast Cross-Platform Database for Flutter
 - [provider](https://pub.dev/packages/provider): State management library that provides a predictable way to manage app state.
-- [get_it] (https://pub.dev/packages/get_it): This is a simple Service Locator for Dart and Flutter projects with some additional goodies highly inspired by Splat. It can be used instead of InheritedWidget or Provider to access objects e.g. from your UI.
+- [get_it](https://pub.dev/packages/get_it): This is a simple Service Locator for Dart and Flutter projects with some additional goodies highly inspired by Splat. It can be used instead of InheritedWidget or Provider to access objects e.g. from your UI.
   
 
 
