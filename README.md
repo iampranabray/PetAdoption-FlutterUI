@@ -13,6 +13,30 @@ This is a pet adoption app built with Flutter that allows users to browse and ad
 ## Screenshots
 <img src="/assets/screenshot.png"/> 
 
+## Architecture
+### Database queries are:
+- Find Records of Limit n.
+  
+  **final List<PetDataModel?> dataModel =
+          await isar.petDataModels.where().limit(20).findAll();**
+- Pagination using ISAR Data Base.
+  
+  **var offsetCount = index * perPage;**
+  
+  **await dataModel.where().offset(offsetCount).limit(10).findAll();**
+- Searching items(AKA Pets)
+  
+  **List<PetDataModel?> dataModel = await isar.petDataModels
+          .filter()
+          .nameContains(searchText ?? "")
+          .findAll();**
+  
+- Setting up model attributes
+  
+  **await isar.petDataModels.filter().isAdoptedEqualTo(true).findAll();**
+
+<img src="/assets/arch.png"/> 
+
 ## Getting Started
 
 To get started with this project, follow these steps:
