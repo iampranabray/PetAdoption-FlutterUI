@@ -14,7 +14,24 @@ This is a pet adoption app built with Flutter that allows users to browse and ad
 <img src="/assets/screenshot.png"/> 
 
 ## Architecture
-### Database queries are:
+
+### Data Layer
+
+This layer is the lowest layer and is responsible for retrieving raw data from external sources such as a databases, APIs, and more.
+
+### Domain Layer
+
+This layer combines one or more data providers and applies "business rules" to the data. Each component in this layer is called a repository and each repository generally manages a single domain. Packages in the repository layer should generally only interact with the data layer.
+
+### Feature Layer
+
+This layer contains all of the application-specific features and use cases. Each feature generally consists of some **UI and business logic**. Features should generally be independent of other features so that they can easily be added/removed without impacting the rest of the codebase. Within each feature, the state of the feature along with any business logic is managed by blocs. Blocs interact with zero or more repositories. Blocs react to events and emit states which trigger changes in the UI. Widgets within each feature should generally only depend on the corresponding bloc and render UI based on the current state. The UI can notify the bloc of user input via events.
+
+<img src="/assets/architecture.png"/> 
+
+Now that we've gone over the layers at a high level, let's start building our application starting with the data layer!
+
+#### Database queries are:
 - Find Records of Limit n.
   
   **final List<PetDataModel?> dataModel =
@@ -34,8 +51,6 @@ This is a pet adoption app built with Flutter that allows users to browse and ad
 - Setting up model attributes
   
   **await isar.petDataModels.filter().isAdoptedEqualTo(true).findAll();**
-
-<img src="/assets/arch.png"/> 
 
 ## Getting Started
 
