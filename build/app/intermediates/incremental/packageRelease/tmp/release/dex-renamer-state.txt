@@ -1,4 +1,0 @@
-#Thu Jul 13 23:00:07 GST 2023
-base.0=/Users/amsit/Downloads/pet_adoption 3/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
